@@ -1,0 +1,1974 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ghebl/ontologies/2021/7/Main-btm-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/Main-btm-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/Main-btm-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalytics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Entrepreneurship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#FormalEducation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Postal_Code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#DesiredSkills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#SoftSkills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#TechnicalSkills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JobSeeker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LangCertificateLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LangCertificateName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasBtmPositions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireEduField"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireExperiance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireSkills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasOrganiztion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasApplyedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDesiredSkills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEduDegreeLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEduField"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPersonalSkills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTechnicalSkills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTrainingCertificate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWorkExperiance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#requireEduLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#hasKnowldge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasResponsibility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasTasks"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#trainingCertificateTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#availablePostions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasJobType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasSalary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobWorkingShift"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#lastApplyDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#StreetName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#unitNo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/organization-ontology#organization_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#desiredSkillTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#hasMustSkills"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#hasNiceSkills"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#softSkillTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#technicalSkillTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#marital_status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sex"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#HasPositionDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceField"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#AgileTransformationCoach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityAnalyst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityAuditor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityConsultant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServicesCloudServicesManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServicesEnterpriseArchitect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServicesITGovernance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServicesQualityAssuranceSpecialist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthBusinessAnalyst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthDataAnalyst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthEnterpriseArchitect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthEnterpriseSolutionsManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthProjectManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthSystemsAnalyst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#InnovationConsultant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#ProcessImprovementAnalyst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#ProductInnovationManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#ProductInnovationSpecialist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#StrategicInnovationManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BusinessAnalystDataScience&amp;Analytics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalystDataScience&amp;Analytics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataScientistJuniorDataScience&amp;Analytics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityManager/Officer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#EnterpriseDataArchitectDataScience&amp;Analytics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthInformationTechnologySolutionsArchitect/Developer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#ProjectManagerDataScience&amp;Analytics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgileCertifiedPractitioner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alberta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anarctica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#British_Columbia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BusinessTechnologyManagement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Canada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CertifiedAssociateInProjectManagement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CertifiedProductManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CertifiedScrumMaster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ComputingAndInformationScience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Economics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#English"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frensh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gatineau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HandsOnTrainingOnVariousITEnvironmentAndCybersecurityScenarios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HandsOnTrainingOnvariousITEnvironmentAndQAScenarios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#J8Y_3G5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#J9J_3B4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#K2B_8M5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Libya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#London"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manitoba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MasterofBusinessAdministration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mathematics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#New_Brunswick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Newfoundland_and_Labrado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#North_America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nova_Scotia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ontario"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ottawa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prince_Edward_Island"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsACP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsCGEIT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsCISA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInBI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInBPM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInBRMS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInCloudTechnologies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInITProjectLeadArchitect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInMobileAppsTechnologies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInPaaSTechnologies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInSystemsAnalys"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsInSystemsArchitect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsPMI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsPMP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsProvidedByISACA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessionalCertificationsRMP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectManagementLeanSixSigma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectManagementMBA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectManagementProfessionalPMP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quebec"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quebec_City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saskatchewan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SixSigmatrainingGreenlackMasterBlackBelt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoftwareDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#South_America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Statistics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toronrto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turkey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_State_of_America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#js1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#js2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#js3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#js4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia/Oceania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#BusinessAdministration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#BusinessTechnologyManagement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#CEGEP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Commerce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#ComputerScience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Diploma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#DoctorateDegree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Engineering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Finance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Legal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#PostSecondarySchool"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Bachelor&apos;sDegree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Master&apos;sDegree"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalytics"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurity"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Entrepreneurship"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServices"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#FormalEducation"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#City"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Postal_Code"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#DesiredSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#SoftSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#TechnicalSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LangCertificateLevel"/>
+        <Class IRI="#Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LangCertificateName"/>
+        <Class IRI="#Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#FormalEducation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#FormalEducation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <Class IRI="#JobSeeker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+        <Class IRI="#JobSeeker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+        <Class IRI="#JobSeeker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <Class IRI="#JobSeeker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#Education"/>
+        <Class IRI="#JobSeeker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+        <Class IRI="#JobSeeker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+        <Class IRI="#JobSeeker"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Entrepreneurship"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#AgileTransformationCoach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityAnalyst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityAuditor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityConsultant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServices"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServicesCloudServicesManager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServices"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServicesEnterpriseArchitect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServices"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServicesITGovernance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServices"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#FinancialServicesQualityAssuranceSpecialist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthBusinessAnalyst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthDataAnalyst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthEnterpriseArchitect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthEnterpriseSolutionsManager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthProjectManager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthSystemsAnalyst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Entrepreneurship"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#InnovationConsultant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Entrepreneurship"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#ProcessImprovementAnalyst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Entrepreneurship"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#ProductInnovationManager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Entrepreneurship"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#ProductInnovationSpecialist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Entrepreneurship"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#StrategicInnovationManager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalytics"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BusinessAnalystDataScience&amp;Analytics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalytics"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalystDataScience&amp;Analytics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalytics"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataScientistJuniorDataScience&amp;Analytics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityManager/Officer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalytics"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#EnterpriseDataArchitectDataScience&amp;Analytics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Health"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#HealthInformationTechnologySolutionsArchitect/Developer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DataAnalytics"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#ProjectManagerDataScience&amp;Analytics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#AgileCertifiedPractitioner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#Alberta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+        <NamedIndividual IRI="#Anarctica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+        <NamedIndividual IRI="#Asia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#British_Columbia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="#BusinessTechnologyManagement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <NamedIndividual IRI="#Canada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#CertifiedAssociateInProjectManagement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#CertifiedProductManager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#CertifiedScrumMaster"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <NamedIndividual IRI="#China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="#ComputingAndInformationScience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="#Economics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <NamedIndividual IRI="#English"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+        <NamedIndividual IRI="#Frensh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#City"/>
+        <NamedIndividual IRI="#Gatineau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#HandsOnTrainingOnVariousITEnvironmentAndCybersecurityScenarios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#HandsOnTrainingOnvariousITEnvironmentAndQAScenarios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Postal_Code"/>
+        <NamedIndividual IRI="#J8Y_3G5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Postal_Code"/>
+        <NamedIndividual IRI="#J9J_3B4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Postal_Code"/>
+        <NamedIndividual IRI="#K2B_8M5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <NamedIndividual IRI="#Libya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#City"/>
+        <NamedIndividual IRI="#London"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#Manitoba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="#MasterofBusinessAdministration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="#Mathematics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#City"/>
+        <NamedIndividual IRI="#Monterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#New_Brunswick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#Newfoundland_and_Labrado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+        <NamedIndividual IRI="#North_America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#Nova_Scotia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#Ontario"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#City"/>
+        <NamedIndividual IRI="#Ottawa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#Prince_Edward_Island"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsACP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsCGEIT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsCISA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInBI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInBPM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInBRMS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInCloudTechnologies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInITProjectLeadArchitect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInMobileAppsTechnologies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInPaaSTechnologies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInSystemsAnalys"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsInSystemsArchitect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsPMI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsPMP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsProvidedByISACA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProfessionalCertificationsRMP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProjectManagementLeanSixSigma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProjectManagementMBA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#ProjectManagementProfessionalPMP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#Quebec"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#City"/>
+        <NamedIndividual IRI="#Quebec_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#province"/>
+        <NamedIndividual IRI="#Saskatchewan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+        <NamedIndividual IRI="#SixSigmatrainingGreenlackMasterBlackBelt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="#SoftwareDevelopment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+        <NamedIndividual IRI="#South_America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="#Statistics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#City"/>
+        <NamedIndividual IRI="#Toronrto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Country"/>
+        <NamedIndividual IRI="#United_State_of_America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JobSeeker"/>
+        <NamedIndividual IRI="#js1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JobSeeker"/>
+        <NamedIndividual IRI="#js2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JobSeeker"/>
+        <NamedIndividual IRI="#js3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JobSeeker"/>
+        <NamedIndividual IRI="#js4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Continent"/>
+        <NamedIndividual IRI="#Australia/Oceania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#BusinessAdministration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#BusinessTechnologyManagement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#CEGEP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Commerce"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#ComputerScience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Diploma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#DoctorateDegree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Engineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Finance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Legal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#PostSecondarySchool"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Bachelor&apos;sDegree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#Master&apos;sDegree"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireEduField"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityManager/Officer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#requireEduLevel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityManager/Officer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#PostSecondarySchool"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasBtmPositions"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityManager/Officer"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasResponsibility"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityManager/Officer"/>
+        <Literal>lead a team of IT and business professionals, who maintain security, develop, and deploy systems. Manage vendors and negotiate contracts with stakeholders.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasTasks"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#DigitalSecurityManager/Officer"/>
+        <Literal>• Plan, organize, direct, manage the security activities 
+• Collaborate with staff, other departments, senior management, decision makers, and other professionals / associates (external to the organization) to share / provide information (as appropriate), problem solve, and to clarify management objectives
+• Identify and articulate potential projects to deliver changes and improvements to business system security 
+• Produce analytics and metrics for business technology systems
+• Establish key performance indicators, monitor on-going performance, and improve performance against set security goals
+• Develop and deliver presentations
+• Manage contractor and subcontractor activities, develop performance specifications, and evaluate proposals to assess project feasibility and requirements
+• Control the budget and expenditures of the department or project
+• Direct the hiring, training, supervision, mentoring, coaching, and performance evaluations of direct reporting staff</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateOfBirth"/>
+        <NamedIndividual IRI="#js1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1965-08-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#js1"/>
+        <Literal>Jamal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#js1"/>
+        <Literal>Elgebli</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marital_status"/>
+        <NamedIndividual IRI="#js1"/>
+        <Literal>Married</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sex"/>
+        <NamedIndividual IRI="#js1"/>
+        <Literal>M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateOfBirth"/>
+        <NamedIndividual IRI="#js2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1980-03-27T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#js2"/>
+        <Literal>John</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#js2"/>
+        <Literal>Taison</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marital_status"/>
+        <NamedIndividual IRI="#js2"/>
+        <Literal>Single</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sex"/>
+        <NamedIndividual IRI="#js2"/>
+        <Literal>M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateOfBirth"/>
+        <NamedIndividual IRI="#js3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-30T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#js3"/>
+        <Literal>Sarha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#js3"/>
+        <Literal>Anderson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marital_status"/>
+        <NamedIndividual IRI="#js3"/>
+        <Literal>Single</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sex"/>
+        <NamedIndividual IRI="#js3"/>
+        <Literal>F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateOfBirth"/>
+        <NamedIndividual IRI="#js4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1995-11-29T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#js4"/>
+        <Literal>Ali</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#js4"/>
+        <Literal>Sager</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marital_status"/>
+        <NamedIndividual IRI="#js4"/>
+        <Literal>Married</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sex"/>
+        <NamedIndividual IRI="#js4"/>
+        <Literal>M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#availablePostions"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasJobType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+        <Literal>Full Time</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasSalary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedDate"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-23T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobWorkingShift"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+        <Literal>morning</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#lastApplyDate"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#HasPositionDevelopment"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#jp1"/>
+        <Literal>Senior Security Director</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasBtmPositions"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireEduField"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireExperiance"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireKnowledge"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireSkills"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasOrganiztion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#locatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasApplyedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDesiredSkills"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEduDegreeLevel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEduField"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasKnowledge"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPersonalSkills"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTechnicalSkills"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTrainingCertificate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWorkExperiance"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#requireEduLevel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasBtmPositions"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireEduField"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireExperiance"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireKnowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasOrganiztion"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#locatedIn"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#locatedIn"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasApplyedTo"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDesiredSkills"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEduDegreeLevel"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEduField"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasKnowledge"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPersonalSkills"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTechnicalSkills"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTrainingCertificate"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWorkExperiance"/>
+        <Class IRI="#JobSeeker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#requireEduLevel"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasBtmPositions"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireEduField"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireExperiance"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireKnowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#requireSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasOrganiztion"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#locatedIn"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasApplyedTo"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDesiredSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#DesiredSkills"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEduDegreeLevel"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEduField"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduField"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasKnowledge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPersonalSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#SoftSkills"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTechnicalSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#TechnicalSkills"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTrainingCertificate"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWorkExperiance"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#requireEduLevel"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#EduDegreeLevel"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#hasKnowldge"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasResponsibility"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasTasks"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#trainingCertificateTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#availablePostions"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasJobType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasSalary"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobWorkingShift"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#lastApplyDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#StreetName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#unitNo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/organization-ontology#organization_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#desiredSkillTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#hasMustSkills"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#hasNiceSkills"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#softSkillTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#technicalSkillTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dateOfBirth"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#firstName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lastName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#marital_status"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sex"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#HasPositionDevelopment"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceField"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceLevel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceTime"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#hasKnowldge"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#Knowledge"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasResponsibility"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasTasks"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#BTMJobsCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#trainingCertificateTitle"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#TrainingCertificate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#availablePostions"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasJobType"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasSalary"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedDate"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedNumber"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobWorkingShift"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#lastApplyDate"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/organization-ontology#organization_name"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#desiredSkillTitle"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#DesiredSkills"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#hasMustSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#hasNiceSkills"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#Skills"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#softSkillTitle"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#SoftSkills"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#technicalSkillTitle"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#TechnicalSkills"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateOfBirth"/>
+        <Class IRI="#JobSeeker"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#firstName"/>
+        <Class IRI="#JobSeeker"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastName"/>
+        <Class IRI="#JobSeeker"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#marital_status"/>
+        <Class IRI="#JobSeeker"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sex"/>
+        <Class IRI="#JobSeeker"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#HasPositionDevelopment"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#JobPosting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceField"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceLevel"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceTime"/>
+        <Class IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#Experiance"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/Knowledge-ontology#hasKnowldge"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasResponsibility"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/btm_positions-ontology#hasTasks"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/education-ontology#trainingCertificateTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#availablePostions"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasJobType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#hasSalary"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobPostedNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#jobWorkingShift"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/job-posting-ontology#lastApplyDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#StreetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/location-ontology#unitNo"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/organization-ontology#organization_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#desiredSkillTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#hasMustSkills"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#hasNiceSkills"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#softSkillTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/6/skills-ontology#technicalSkillTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#firstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#marital_status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sex"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#HasPositionDevelopment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceField"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/ghebl/ontologies/2021/7/ghebli-btm-ontology#hasExperianceTime"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
